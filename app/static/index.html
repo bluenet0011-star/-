@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>시간표 도우미</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f6fde'/%3E%3Cpath d='M4 5h8M4 8h8M4 11h8' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" data-go="home" title="시간표 목록">시간표 도우미</button>
+    <div class="project-title" id="projectTitle"></div>
+    <div class="spacer"></div>
+    <span class="save-state" id="saveState"></span>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content" id="content"></main>
+  </div>
+  <div id="popover" class="popover" hidden></div>
+  <div id="toast" class="toast" hidden></div>
+  <script src="/static/app.js"></script>
+  <script src="/static/views_data.js"></script>
+  <script src="/static/views_tt.js"></script>
+</body>
+</html>
